@@ -7,7 +7,7 @@ export default function MovingText() {
   
   useEffect(() => {
     const handleScroll = () => {
-      setOffset(window.scrollY * 3); // Adjust speed by changing the multiplier
+      setOffset(window.scrollY * 3);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -17,7 +17,7 @@ export default function MovingText() {
   return (
     <h2
       className="font100 text-white fixed top-20 left-0 transition-transform duration-200 ease-out"
-      style={{ transform: `translateX(${offset}px)` }}
+      style={{ transform: `translateX(-${offset}px)` }}
     >
       Let’s make something great together
     </h2>

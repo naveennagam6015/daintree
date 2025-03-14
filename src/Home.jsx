@@ -11,6 +11,7 @@ import aaImage from '/src/assets/image2.png';
 import siImage from '/src/assets/image3.png';
 import Footer from './Footer';
 import MovingText from './MovingText';
+import MovingTextTwo from './MovingTextTwo';
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(csImage);
 
@@ -21,7 +22,7 @@ export default function Home() {
     <div >
       <div className='bg-gray pt-5'>
         {/* banner  */}
-        <section className=' px-5'> 
+        <section className=' px-5'>
           <div className='text-white mx-5 flex items-center'>
             <div className='blue padding-80 d-flex center Bannerheight card-border'>
               <div className='flex'>
@@ -47,14 +48,14 @@ export default function Home() {
             Let’s make something great together
             </h2>
           </div> */}
-         
+
         <div className='movingText'>
-        <MovingText />
+          <MovingText />
         </div>
         <div className='p-5'></div>
         <section className='m-5 px-5'>
-          
-          
+
+
           <h2 className='text-white font64 fw-bold'>
             What we <span className='colorBlue'>Offer</span>
           </h2>
@@ -71,7 +72,7 @@ export default function Home() {
             </div>
             <div className="image-box">
               <p className='text-white font32'>
-              Scalable, secure, and optimized cloud architecture for modern businesses
+                Scalable, secure, and optimized cloud architecture for modern businesses
               </p>
               <div className="image-change" style={{ backgroundImage: `url(${backgroundImage})` }}> </div>
             </div>
@@ -85,28 +86,28 @@ export default function Home() {
 
         </section>
 
-      
-{/* 
-      <div className='blue pb-2 '>
-        <h2 className='font100 text-white text-center'>
-          Let’s make something great
-       
-        </h2>
-      </div> */}
-      <div className='movingText blue'>
-        <MovingText />
+
+
+        <div className='movingText blue'>
+          <div className="relative w-full overflow-hidden">
+            <h2
+              className="font100 text-white absolute top-20 left-0 transition-transform duration-200 ease-out"
+            >
+              Let’s make something great together
+            </h2>
+          </div>
         </div>
-      <div className='p-5'></div>
+        <div className='p-5'></div>
 
 
-      <div className='p-5 mx-5'>
-        <h2 className='text-white font44'>
-          Daintree Technologies
-        </h2>
-        <p className='text-white font28'>
-          At Daintree Technologies, we specialize in <span className='colorBlue underline'>cutting-edge IT solutions </span> that drive business growth, efficiency, and digital transformation. From building <span className='colorBlue'>custom software</span>  and <span className='colorBlue'>AI automation</span> to cloud solutions and <span className='colorBlue'>cybersecurity </span> , we empower businesses with innovative technology <span className='colorBlue'>tailored to their needs </span>. Our mission is to simplify complexity, enhance performance, and future-proof your success in the ever-evolving digital landscape.
-        </p>
-      </div>
+        <div className='p-5 mx-5 mt-90'>
+          <h2 className='text-white font44'>
+            Daintree Technologies
+          </h2>
+          <p className='text-white font28'>
+            At Daintree Technologies, we specialize in <span className='colorBlue underline'>cutting-edge IT solutions </span> that drive business growth, efficiency, and digital transformation. From building <span className='colorBlue'>custom software</span>  and <span className='colorBlue'>AI automation</span> to cloud solutions and <span className='colorBlue'>cybersecurity </span> , we empower businesses with innovative technology <span className='colorBlue'>tailored to their needs </span>. Our mission is to simplify complexity, enhance performance, and future-proof your success in the ever-evolving digital landscape.
+          </p>
+        </div>
       </div>
 
 
@@ -165,14 +166,14 @@ export default function Home() {
 
 
         </div>
-      
 
-      <div className='mt-5 ms-5 p-5'>
-        <h2 className='colorBlue font64 mt-5  width70'>
-          Let’s get to work and build something great together
-        </h2>
-        <button className='font44 colorBlue bg-white mt-5 mb-5 btn-border pt-2 pb-2'>Get Started</button>
-      </div>
+
+        <div className='mt-5 ms-5 p-5'>
+          <h2 className='colorBlue font64 mt-5  width70'>
+            Let’s get to work and build something great together
+          </h2>
+          <button className='font44 colorBlue bg-white mt-5 mb-5 btn-border pt-2 pb-2'>Get Started</button>
+        </div>
       </div>
       <Footer />
     </div>
