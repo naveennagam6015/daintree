@@ -4,43 +4,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Contact() {
     return (
-        <Container className="mt-5">
+        <Container fluid className="p-5 mt-5">
             {/* Contact Heading */}
             <Row className="mb-4">
-                <Col>
-                    <h1 className="fw-bold text-uppercase">Contact Us</h1>
+                <Col md={6}>
+                    <h1 className="fw-bold">CONTACT US</h1>
                     <p className="text-muted">Stock up your inventory levels on a quarterly basis</p>
-                </Col>
-            </Row>
 
-            {/* Buttons */}
-            <Row className="mb-4">
-                <Col md={6}>
-                    <Button variant="primary" className="w-100 py-3 fs-5">
-                        I am a Seller →
-                    </Button>
-                </Col>
-                <Col md={6}>
-                    <Button variant="outline-primary" className="w-100 py-3 fs-5">
-                        I am an Enterprise →
-                    </Button>
-                </Col>
-            </Row>
+                    {/* Buttons Section */}
+                    <div className="d-grid gap-3">
+                        <Button variant="primary" className="p-3 fw-bold">
+                            I am a Seller →
+                            <p className="mb-0 fw-normal" style={{ fontSize: '14px' }}>
+                                Stock up your inventory levels on a quarterly basis
+                            </p>
+                        </Button>
 
-            {/* Contact Info */}
-            <Row className="mb-4">
-                <Col md={6} className="mb-4">
-                    <h5 className="fw-bold">Email a Brief</h5>
-                    <p className="text-primary fw-bold">hello@daintreetech.com</p>
+                        <Button variant="light" className="p-3 fw-bold border">
+                            I am an Enterprise →
+                            <p className="mb-0 fw-normal" style={{ fontSize: '14px' }}>
+                                Stock up your inventory levels on a quarterly basis
+                            </p>
+                        </Button>
+                    </div>
 
-                    <h5 className="fw-bold mt-3">Speak With an Expert</h5>
-                    <p className="fw-bold">+01 1234 4556</p>
+                    {/* Contact Info */}
+                    <div className="mt-4">
+                        <h5 className="fw-bold">EMAIL A BRIEF</h5>
+                        <p className="text-primary fw-bold">hello@daintreetech.com</p>
 
-                    <h5 className="fw-bold mt-3">Find Us At</h5>
-                    <p className="fw-bold text-primary">
-                        12-14/3 #104, Asian Sun City, Behind Amb Mall, Kothaguda, Hyderabad, Telangana, 500084
-                    </p>
-                    <a href="#" className="text-decoration-underline">View on maps</a>
+                        <h5 className="fw-bold mt-3">SPEAK WITH AN EXPERT</h5>
+                        <p className="fw-bold">+01 1234 4556</p>
+
+                        <h5 className="fw-bold mt-3">FIND US AT</h5>
+                        <p className="fw-bold text-primary">
+                            12-14/3 #104, Asian Sun City, Behind Amb Mall, Kothaguda, Hyderabad, Telangana, 500084
+                        </p>
+                        <a href="#" className="text-decoration-underline">View on maps</a>
+                    </div>
                 </Col>
 
                 {/* Contact Form */}
@@ -62,47 +63,50 @@ export default function Contact() {
                             <Form.Check key={index} type="checkbox" label={option} className="mb-2" />
                         ))}
 
+                        {/* Form Fields */}
                         <Row className="mt-3">
-                            <Col md={6}>
+                            <Col md={6} className="mb-3">
                                 <Form.Group>
                                     <Form.Label>Your Name *</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter your name" required />
+                                    <Form.Control type="text" required />
                                 </Form.Group>
                             </Col>
-                            <Col md={6}>
+                            <Col md={6} className="mb-3">
                                 <Form.Group>
                                     <Form.Label>Your Email *</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter your email" required />
+                                    <Form.Control type="email" required />
                                 </Form.Group>
                             </Col>
                         </Row>
 
                         <Row className="mt-3">
-                            <Col md={6}>
+                            <Col md={6} className="mb-3">
                                 <Form.Group>
                                     <Form.Label>Company Name *</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter company name" required />
+                                    <Form.Control type="text" required />
                                 </Form.Group>
                             </Col>
-                            <Col md={6}>
+                            <Col md={6} className="mb-3">
                                 <Form.Group>
                                     <Form.Label>Phone Number *</Form.Label>
-                                    <Form.Control type="tel" placeholder="Enter phone number" required />
+                                    <Form.Control type="tel" required />
                                 </Form.Group>
                             </Col>
                         </Row>
 
                         <Form.Group className="mt-3">
                             <Form.Label>Message *</Form.Label>
-                            <Form.Control as="textarea" rows={4} placeholder="Type your message" required />
+                            <Form.Control as="textarea" rows={4} required />
                         </Form.Group>
 
+                        {/* Contact Preference */}
                         <h5 className="fw-bold mt-4">I'd like to be contacted by</h5>
                         {['Phone', 'Email', 'No preference'].map((option, index) => (
                             <Form.Check key={index} type="radio" name="contactMethod" label={option} className="mb-2" />
                         ))}
 
-                        <Button type="submit" variant="primary" className="mt-3 w-100">
+                        {/* Submit Button */}
+                        <Button type="submit" variant="primary" className="mt-3 w-100 py-2 fw-bold">
                             Submit
                         </Button>
                     </Form>

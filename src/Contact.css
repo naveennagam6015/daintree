@@ -1,0 +1,103 @@
+/* Full-width container */
+.contact-container {
+    padding: 50px;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #316ff6;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+}
+
+.btn-custom-light {
+    background-color: #f8f9fa;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-custom-light:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Details */
+.contact-info {
+    padding: 30px 0;
+}
+
+.contact-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Form */
+.input-field {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #316ff6;
+    box-shadow: 0 0 8px rgba(49, 111, 246, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #316ff6;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #275bc3;
+    transform: scale(1.05);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .btn-custom,
+    .btn-custom-light,
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
