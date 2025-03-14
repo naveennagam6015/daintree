@@ -7,6 +7,29 @@
   color: #0AA9FF;
 }
 
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+
+
 .navbg {
   background-color: #1D1D1D;
 }
@@ -184,6 +207,7 @@
 .lineheight {
   line-height: 40px;
 }
+
 .linegeight100 {
   line-height: 100%;
 }
