@@ -10,7 +10,7 @@ import csImage from '/src/assets/image1.png';
 import aaImage from '/src/assets/image2.png';
 import siImage from '/src/assets/image3.png';
 import Footer from './Footer';
-
+import MovingText from './MovingText';
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(csImage);
 
@@ -24,9 +24,12 @@ export default function Home() {
         <section className=' px-5'> 
           <div className='text-white mx-5 flex items-center'>
             <div className='blue padding-80 d-flex center Bannerheight card-border'>
-              <div className=''>
+              <div className='flex'>
                 <h2 className='leading-tight font64'>
-                  Innovative IT solutions to streamline, scale, and succeed.
+                  <div>Innovative IT</div>
+                  <div>solutions to</div>
+                  <div>streamline, scale, </div>
+                  <div>and succeed.</div>
                 </h2>
               </div>
               <div className=' ms-5'>
@@ -39,12 +42,16 @@ export default function Home() {
         {/* Section 1 */}
 
 
-        <div>
-            <marquee className="font100 text-white">
+        {/* <div>
+            <h2 className="font100 text-white">
             Let’s make something great together
-            </marquee>
-          </div>
-
+            </h2>
+          </div> */}
+         
+        <div className='movingText'>
+        <MovingText />
+        </div>
+        <div className='p-5'></div>
         <section className='m-5 px-5'>
           
           
@@ -79,13 +86,19 @@ export default function Home() {
         </section>
 
       
-
+{/* 
       <div className='blue pb-2 '>
         <h2 className='font100 text-white text-center'>
           Let’s make something great
-          {/* together */}
+       
         </h2>
-      </div>
+      </div> */}
+      <div className='movingText blue'>
+        <MovingText />
+        </div>
+      <div className='p-5'></div>
+
+
       <div className='p-5 mx-5'>
         <h2 className='text-white font44'>
           Daintree Technologies
