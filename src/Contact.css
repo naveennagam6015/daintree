@@ -1,0 +1,64 @@
+
+
+
+.fontblack{
+    color: #353839;
+}
+
+
+
+
+
+
+.font56 {
+    font-size: 3.5rem; 
+}
+
+.font24 {
+    font-size: 1.5rem; 
+}
+
+.font20 {
+    font-size: 1.25rem; 
+}
+
+.font32 {
+    font-size: 2rem; 
+}
+
+.font16 {
+    font-size: 1rem; 
+}
+
+
+
+.fontw400{
+    font-weight: 400;
+}
+.fontw700{
+    font-weight: 700;
+}
+
+
+
+.letter15{
+    letter-spacing: 4px;
+    font-weight: 400  !important ;
+}
+.letterspace{
+    letter-spacing: 2px;
+    font-weight: 400  !important ;
+}
+
+
+
+.mt-47{
+    margin-top: 47px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+
+.underline{
+    text-decoration: underline #305CDE;
+}

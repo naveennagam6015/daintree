@@ -2,6 +2,7 @@ import './App.css';
 import Home from "./Home";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from './Nav';
 import Contact from './Contact';
 function App() {
