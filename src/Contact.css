@@ -1,103 +1,64 @@
-/* Full-width container */
-.contact-container {
-    padding: 50px;
-    background-color: #fff;
-    width: 100%;
+
+
+
+.fontblack{
+    color: #353839;
 }
 
-/* Buttons */
-.btn-custom {
-    background-color: #316ff6;
-    color: white;
-    font-weight: bold;
-    padding: 12px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+
+
+
+
+
+.font56 {
+    font-size: 3.5rem; 
 }
 
-.btn-custom:hover {
-    transform: scale(1.05);
+.font24 {
+    font-size: 1.5rem; 
 }
 
-.btn-custom-light {
-    background-color: #f8f9fa;
-    color: black;
-    font-weight: bold;
-    padding: 12px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+.font20 {
+    font-size: 1.25rem; 
 }
 
-.btn-custom-light:hover {
-    transform: scale(1.05);
+.font32 {
+    font-size: 2rem; 
 }
 
-/* Contact Details */
-.contact-info {
-    padding: 30px 0;
+.font16 {
+    font-size: 1rem; 
 }
 
-.contact-details {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
+
+
+.fontw400{
+    font-weight: 400;
+}
+.fontw700{
+    font-weight: 700;
 }
 
-/* Form */
-.input-field {
-    border-radius: 8px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease-in-out;
+
+
+.letter15{
+    letter-spacing: 4px;
+    font-weight: 400  !important ;
+}
+.letterspace{
+    letter-spacing: 2px;
+    font-weight: 400  !important ;
 }
 
-.input-field:focus {
-    border-color: #316ff6;
-    box-shadow: 0 0 8px rgba(49, 111, 246, 0.5);
+
+
+.mt-47{
+    margin-top: 47px;
+}
+.mt-50{
+    margin-top: 50px;
 }
 
-/* Submit Button */
-.submit-btn {
-    background-color: #316ff6;
-    font-size: 18px;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.submit-btn:hover {
-    background-color: #275bc3;
-    transform: scale(1.05);
-}
-
-/* Animations */
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        padding: 20px;
-    }
-
-    .btn-custom,
-    .btn-custom-light,
-    .submit-btn {
-        font-size: 16px;
-        padding: 10px;
-    }
+.underline{
+    text-decoration: underline #305CDE;
 }
