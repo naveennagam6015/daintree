@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg custom-navbar navbg fixed-top">
-        <div className="container-fluid">
+        <div className="container">
           <Link className="navbar-brand" to="/">
             <img src={logo} width={200} alt="IT Solutions" className="rounded-lg shadow-lg" />
           </Link>
@@ -60,6 +60,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+      <div className='nav-adj' ></div>
     </div>
   );
 }

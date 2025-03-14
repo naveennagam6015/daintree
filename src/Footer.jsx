@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row mt-5">
           <div className="col-md-5">
               <a className="navbar-brand text-primary" href="#">
-                        <img src={logo} width={350} alt="IT Solutions" className="rounded-lg shadow-lg" />
+                        <img src={logo} width={350} alt="IT Solutions" className="rounded-lg" />
             
                       </a>
             <p className="font36 mt-4 linegeight100">Cutting-edge tech, seamless solutions – all in one place.</p>
